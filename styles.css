@@ -1,13 +1,30 @@
 #mainFrame {
     display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    grid-column: 4;
     height: 500px;
     width: 400px;
     border: 2px solid black;
 }
 
-.button {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
+.button { 
     background-color: limegreen;
     color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+.display {
+    grid-area: 1 / 2 / auto / span 3;
+    border: 1px solid white;
+    background-color: limegreen;
+    text-align: right;
+}
+
+.rightColumn {
+    background-color: rgba(50, 205, 50, .67);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
 }
