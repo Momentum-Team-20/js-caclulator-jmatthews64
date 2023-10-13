@@ -4,6 +4,10 @@ const canClick = document.querySelectorAll(".clickable");
 
 //grabbing display to output results of clicks
 let calcDisplay = document.querySelector(".display");
+ //Set variables to save numbers and operators input
+let num1;
+let num2;
+let operation;
 
 //creating click event that allows all buttons to be clicked
 for (let eachButton of canClick) {
@@ -19,14 +23,16 @@ for (let eachButton of canClick) {
         //Determine of the charater pressed is a number
         
             console.log(buttonChar);
-            let num1 = calcDisplay.innerText;
-            let operation = buttonChar;
-            calcDisplay.innerText = buttonChar
+            num1 = calcDisplay.innerText;
+            operation = buttonChar;
+            calcDisplay.innerText = buttonChar;
             console.log(num1);
             console.log(operation);
         } else {
             calcDisplay.innerText += buttonChar;
         }
-
+        if(num1 != "" && operation != "") {
+            console.log(num1, operation);
+        }
     })
 }
