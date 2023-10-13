@@ -8,7 +8,10 @@ let calcDisplay = document.querySelector(".display");
 //creating click event that allows all buttons to be clicked
 for (let eachButton of canClick) {
     eachButton.addEventListener("click", (event) => {
-
+        //get character from button pushed
+        let buttonChar = eachButton.innerText;
+        console.log(buttonChar)
+        
 
     })
 }
