@@ -10,12 +10,22 @@ for (let eachButton of canClick) {
     eachButton.addEventListener("click", (event) => {
         //get character from button pushed
         let buttonChar = eachButton.innerText;
+
+        //refreshes page and clears display
+        if (buttonChar === "C") {
+            location.reload()
+        } else if (isNaN(buttonChar)) {
         
         //Determine of the charater pressed is a number
-        if (isNaN(buttonChar)) {
+        
             console.log(buttonChar);
+            let num1 = calcDisplay.innerText;
+            let operation = buttonChar;
+            calcDisplay.innerText = buttonChar
+            console.log(num1);
+            console.log(operation);
         } else {
-            calcDisplay.innerText = buttonChar;
+            calcDisplay.innerText += buttonChar;
         }
 
     })
