@@ -3,7 +3,7 @@
 let canClick = document.querySelectorAll(".clickable");
 
 //grabbing display to output results of clicks
-let calcDisplay = document.querySelector(".display");
+const calcDisplay = document.querySelector(".display");
 
 //creating click event that allows all buttons to be clicked
 for (let eachButton of canClick) {
@@ -15,7 +15,17 @@ for (let eachButton of canClick) {
         if (isNaN(buttonChar)) {
             console.log(buttonChar);
         } else {
-            console.log(`It's number ${Number(buttonChar)}`);
+            let newText = document.createElement("div");
+            newText.innerText = buttonChar
+            
+            //Attempting to remove previous text and replace
+            if (calcDisplay.innerText != "") {
+                console.log("Second if is true");
+                newText.remove();
+            } 
+           
+            calcDisplay.appendChild(newText);
+            
         }
 
     })
