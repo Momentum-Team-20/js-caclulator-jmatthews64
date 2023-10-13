@@ -10,8 +10,13 @@ for (let eachButton of canClick) {
     eachButton.addEventListener("click", (event) => {
         //get character from button pushed
         let buttonChar = eachButton.innerText;
-        console.log(buttonChar)
         
+        //Determine of the charater pressed is a number
+        if (isNaN(buttonChar)) {
+            console.log(buttonChar);
+        } else {
+            console.log(`It's number ${Number(buttonChar)}`);
+        }
 
     })
 }
