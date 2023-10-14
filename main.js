@@ -20,11 +20,13 @@ for (let eachButton of canClick) {
         if (buttonChar === "C") {
             location.reload()
         } else if (buttonChar === "=") {
+           // evaluates string as mathematical expression"
             console.log("Equals")
             total = calcDisplay.innerText;
             calcDisplay.innerText = eval(total);
         } else {
             calcDisplay.innerText += buttonChar;
         }
-    
+        
+        
     })}
