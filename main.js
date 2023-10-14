@@ -36,6 +36,10 @@ for (let eachButton of canClick) {
             calcDisplay.innerText += buttonChar;
         }
         //check if there is a first number and an operation, the allow num2
-        
+        if(num1 != undefined && operation != undefined) {
+            console.log("Num1 and operation have been assigned");
+            
+
+        }
     })
 }
