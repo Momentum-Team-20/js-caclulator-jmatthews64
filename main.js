@@ -20,6 +20,14 @@ for (let eachButton of canClick) {
         if (buttonChar === "C") {
             location.reload()
         } 
+
+        //Handle when "=" is clicked to evaluate the equation or throw an error
+        // if(buttonChar === "=" && num2 != undefined) {
+        //     total = eval(num1, operation, num2);
+        //     calcDisplay.innerText = total;
+        // } else if (buttonChar === "=" && num2 === undefined) {
+        //     alert("Error: not enough numbers to perform calculation!")
+        // }
         
         if (isNaN(buttonChar)) {
         
@@ -38,8 +46,7 @@ for (let eachButton of canClick) {
         //check if there is a first number and an operation, the allow num2
         if(num1 != undefined && operation != undefined) {
             console.log("Num1 and operation have been assigned");
-            
 
         }
-    })
-}
+    
+    })}
