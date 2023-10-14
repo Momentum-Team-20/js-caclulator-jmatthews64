@@ -8,6 +8,7 @@ let calcDisplay = document.querySelector(".display");
 let num1;
 let num2;
 let operation;
+let total;
 
 //creating click event that allows all buttons to be clicked
 for (let eachButton of canClick) {
@@ -18,7 +19,9 @@ for (let eachButton of canClick) {
         //refreshes page and clears display
         if (buttonChar === "C") {
             location.reload()
-        } else if (isNaN(buttonChar)) {
+        } 
+        
+        if (isNaN(buttonChar)) {
         
         //Determine of the charater pressed is a number
         
@@ -31,8 +34,7 @@ for (let eachButton of canClick) {
         } else {
             calcDisplay.innerText += buttonChar;
         }
-        if(num1 != "" && operation != "") {
-            console.log(num1, operation);
-        }
+        //check if there is a first number and an operation, the allow num2
+        
     })
 }
