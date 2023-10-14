@@ -31,6 +31,7 @@ for (let eachButton of canClick) {
             calcDisplay.innerText = buttonChar;
             console.log(num1);
             console.log(operation);
+            
         } else {
             calcDisplay.innerText += buttonChar;
         }
